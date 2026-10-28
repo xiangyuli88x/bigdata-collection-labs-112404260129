@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-27T17:02:09.006024+08:00",
+  "state": "passed_first8_user_requested_scope",
+  "pages": 8,
+  "raw_count": 480,
+  "duplicate_count": 43,
+  "csv_rows": 437,
+  "before_count": 0,
+  "after_count": 437,
+  "inserted_count": 437,
+  "rerun_inserted_count": 0,
+  "samples_match": true,
+  "site_complete": false,
+  "scope_complete": true,
+  "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
+  "report_image_links_ok": true
+}

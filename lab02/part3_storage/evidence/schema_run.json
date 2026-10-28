@@ -1,0 +1,92 @@
+{
+  "version": "8.4.11",
+  "database": "smartpark_lab",
+  "current_user": "student@%",
+  "charset": "utf8mb4",
+  "autocommit": 0,
+  "tables": [
+    "houseinfo"
+  ],
+  "table_exists": true,
+  "description": [
+    [
+      "id",
+      "int",
+      "NO",
+      "PRI",
+      null,
+      "auto_increment"
+    ],
+    [
+      "title",
+      "varchar(200)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "house",
+      "varchar(50)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "address",
+      "varchar(200)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "struct",
+      "varchar(50)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "area",
+      "varchar(20)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "floor",
+      "varchar(20)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "maketime",
+      "varchar(20)",
+      "YES",
+      "",
+      null,
+      ""
+    ],
+    [
+      "price",
+      "varchar(20)",
+      "YES",
+      "",
+      null,
+      ""
+    ]
+  ],
+  "create_sql": "CREATE TABLE `houseinfo` (\n  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增长主键',\n  `title` varchar(200) DEFAULT NULL COMMENT '标题',\n  `house` varchar(50) DEFAULT NULL COMMENT '楼盘',\n  `address` varchar(200) DEFAULT NULL COMMENT '地址',\n  `struct` varchar(50) DEFAULT NULL COMMENT '户型',\n  `area` varchar(20) DEFAULT NULL COMMENT '建筑面积',\n  `floor` varchar(20) DEFAULT NULL COMMENT '楼层',\n  `maketime` varchar(20) DEFAULT NULL COMMENT '建造年代',\n  `price` varchar(20) DEFAULT NULL COMMENT '每平方米单价',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+  "engine": "InnoDB",
+  "collation": "utf8mb4_0900_ai_ci",
+  "row_count": 0,
+  "first_five": [],
+  "structure_ok": true,
+  "issues": []
+}

@@ -1,0 +1,160 @@
+{
+  "all_csv_rows_present": true,
+  "samples": [
+    {
+      "role": "first",
+      "csv_index_zero_based": 0,
+      "csv_line": 2,
+      "matched_ids": [
+        1
+      ],
+      "fields": {
+        "title": {
+          "csv": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",
+          "database": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",
+          "equal": true
+        },
+        "house": {
+          "csv": "万科金域学府翰林菁华里",
+          "database": "万科金域学府翰林菁华里",
+          "equal": true
+        },
+        "address": {
+          "csv": "南岸学府大道二塘路59号",
+          "database": "南岸学府大道二塘路59号",
+          "equal": true
+        },
+        "struct": {
+          "csv": "3室2厅1卫",
+          "database": "3室2厅1卫",
+          "equal": true
+        },
+        "area": {
+          "csv": "89.9㎡",
+          "database": "89.9㎡",
+          "equal": true
+        },
+        "floor": {
+          "csv": "低层(共27层)",
+          "database": "低层(共27层)",
+          "equal": true
+        },
+        "maketime": {
+          "csv": "2019年建造",
+          "database": "2019年建造",
+          "equal": true
+        },
+        "price": {
+          "csv": "16465元/㎡",
+          "database": "16465元/㎡",
+          "equal": true
+        }
+      },
+      "all_eight_equal": true
+    },
+    {
+      "role": "last",
+      "csv_index_zero_based": 436,
+      "csv_line": 438,
+      "matched_ids": [
+        437
+      ],
+      "fields": {
+        "title": {
+          "csv": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+          "database": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+          "equal": true
+        },
+        "house": {
+          "csv": "荣盛鹿山府",
+          "database": "荣盛鹿山府",
+          "equal": true
+        },
+        "address": {
+          "csv": "渝北中央公园金州大道,近万康路",
+          "database": "渝北中央公园金州大道,近万康路",
+          "equal": true
+        },
+        "struct": {
+          "csv": "3室2厅2卫",
+          "database": "3室2厅2卫",
+          "equal": true
+        },
+        "area": {
+          "csv": "99㎡",
+          "database": "99㎡",
+          "equal": true
+        },
+        "floor": {
+          "csv": "中层(共6层)",
+          "database": "中层(共6层)",
+          "equal": true
+        },
+        "maketime": {
+          "csv": "2020年建造",
+          "database": "2020年建造",
+          "equal": true
+        },
+        "price": {
+          "csv": "15960元/㎡",
+          "database": "15960元/㎡",
+          "equal": true
+        }
+      },
+      "all_eight_equal": true
+    },
+    {
+      "role": "cross_page",
+      "csv_index_zero_based": 60,
+      "csv_line": 62,
+      "matched_ids": [
+        61
+      ],
+      "fields": {
+        "title": {
+          "csv": "万科物业自营 朝中庭 业主诚心出售",
+          "database": "万科物业自营 朝中庭 业主诚心出售",
+          "equal": true
+        },
+        "house": {
+          "csv": "万科金域学府翰林菁华里",
+          "database": "万科金域学府翰林菁华里",
+          "equal": true
+        },
+        "address": {
+          "csv": "南岸学府大道二塘路59号",
+          "database": "南岸学府大道二塘路59号",
+          "equal": true
+        },
+        "struct": {
+          "csv": "3室2厅1卫",
+          "database": "3室2厅1卫",
+          "equal": true
+        },
+        "area": {
+          "csv": "85.7㎡",
+          "database": "85.7㎡",
+          "equal": true
+        },
+        "floor": {
+          "csv": "低层(共27层)",
+          "database": "低层(共27层)",
+          "equal": true
+        },
+        "maketime": {
+          "csv": "2018年建造",
+          "database": "2018年建造",
+          "equal": true
+        },
+        "price": {
+          "csv": "16914元/㎡",
+          "database": "16914元/㎡",
+          "equal": true
+        }
+      },
+      "all_eight_equal": true
+    }
+  ],
+  "cross_page_source_available": true,
+  "samples_match": true
+}

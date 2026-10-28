@@ -1,0 +1,26 @@
+{
+  "stage": 3,
+  "state": "awaiting_csv",
+  "checked_at": "2026-10-27T16:59:34+08:00",
+  "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
+  "before_count": 0,
+  "after_count": 437,
+  "inserted_count": 437,
+  "rerun_inserted_count": null,
+  "samples_match": true,
+  "actual_import_completed": true,
+  "reason": "首次真实入库及逐字段核验完成，等待新进程独立重跑",
+  "csv_rows": 437,
+  "committed_batches": [
+    {
+      "phase": "small_real_sample",
+      "inserted_count": 3
+    },
+    {
+      "phase": "all_csv",
+      "inserted_count": 434
+    }
+  ],
+  "final_db_fingerprint": "f0e7dc6aadd6a3e034b837a67904aec6cdddc99d30644c489967c909c6f5af9d",
+  "cross_page_sample_verified": true
+}

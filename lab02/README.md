@@ -37,7 +37,7 @@
 | 入库、事务及去重实现 | [part3_storage/storage.py](part3_storage/storage.py) |
 | 前8页入库结果Notebook | [part3_storage/first8_result.ipynb](part3_storage/first8_result.ipynb) |
 
-根目录的 `anjuke.py`、`environment_check.py` 和 `tools/` 保留了早期配套实现。查看及复跑本次三阶段流程时，优先使用上表中各阶段的入口；不要把不同版本的入口、CSV和报告混用。
+本目录仅保留三阶段流程，早期一体化脚本、重复导出和未使用的过程文件已精简。查看及复跑时使用上表中的入口。
 
 ## 文件夹作用
 
@@ -55,8 +55,6 @@ lab02/
     images/                实际操作截图
     evidence/              入库与独立重跑结果
     logs/                  程序运行日志
-  evidence/                其他历史记录
-  tools/                   配套生成工具
 ```
 
 `REPORT_part*.md` 是实验报告，`README.md` 是运行说明；`status.json` 是对应程序最后保存的状态，不能代替实时数据库查询，也不能仅凭文件名判断是哪一版结果。
@@ -101,9 +99,9 @@ python part2_collection/collect_houses.py verify
 python part2_collection/browser_collect.py
 ```
 
-也可在Windows双击 `part2_collection/运行浏览器采集.bat`。浏览器程序每次结果另存到 `part2_collection/evidence/browser_runs/日期时间_编号/`，包括HTML、CSV、来源清单、日志和截图；它不会自动替换 `data/houseinfo.csv` 或直接写入MySQL。
+也可在Windows双击 `part2_collection/运行浏览器采集.bat`。浏览器程序每次结果统一另存到 `part2_collection/evidence/runs/browser_日期时间_编号/`，包括HTML、CSV、来源清单、日志和截图；它不会自动替换 `data/houseinfo.csv` 或直接写入MySQL。
 
-`part2_collection/browser_last_run.json` 记录最新一次独立浏览器运行结果。网站出现访问验证、重复页面或结构异常时应保留失败原因，不把异常停止写成采集完整。
+下次运行浏览器入口会生成 `part2_collection/browser_last_run.json`，记录该次运行结果。当前保留的标准CSV来源由 `csv_provenance.json` 指向；重复独立运行的旧副本已移出。网站出现访问验证、重复页面或结构异常时应保留失败原因，不把异常停止写成采集完整。
 
 ## 第三部分：读取CSV并入库核对
 

@@ -1,0 +1,280 @@
+{
+  "stage": 3,
+  "run_id": "20261027_165930_11522",
+  "started_at": "2026-10-27T16:59:30+08:00",
+  "checked_at": "2026-10-27T16:59:37+08:00",
+  "state": "ready",
+  "import_process_started": true,
+  "actual_import_completed": true,
+  "actual_write_state": "recorded_by_this_process",
+  "before_count": 0,
+  "after_count": 437,
+  "inserted_count": 437,
+  "rerun_inserted_count": 0,
+  "samples_match": true,
+  "source_samples": [
+    {
+      "sample": "first",
+      "page": 1,
+      "url": "https://www.bspider.top/anjuke/",
+      "page_row": 1,
+      "csv_line": 2,
+      "record": {
+        "title": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "89.9㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2019年建造",
+        "price": "16465元/㎡"
+      },
+      "html_csv_exact_match": true
+    },
+    {
+      "sample": "cross_page",
+      "page": 2,
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "page_row": 1,
+      "csv_line": 62,
+      "record": {
+        "title": "万科物业自营 朝中庭 业主诚心出售",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "85.7㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2018年建造",
+        "price": "16914元/㎡"
+      },
+      "html_csv_exact_match": true
+    },
+    {
+      "sample": "last",
+      "page": 8,
+      "url": "https://www.bspider.top/anjuke/?page=8",
+      "page_row": 60,
+      "csv_line": 438,
+      "record": {
+        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+        "house": "荣盛鹿山府",
+        "address": "渝北中央公园金州大道,近万康路",
+        "struct": "3室2厅2卫",
+        "area": "99㎡",
+        "floor": "中层(共6层)",
+        "maketime": "2020年建造",
+        "price": "15960元/㎡"
+      },
+      "html_csv_exact_match": true
+    }
+  ],
+  "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
+  "returncode": 0,
+  "stdout_file": "logs/real_pipeline_20261027_165930_11522.stdout.txt",
+  "stderr_file": "logs/real_pipeline_20261027_165930_11522.stderr.txt",
+  "reason": "真实网页来源、CSV与数据库8字段一致；少量/全量入库及新进程重跑新增0通过",
+  "source_mode": "browser_snapshot",
+  "cross_page_index": 60,
+  "csv_rows": 437,
+  "source_run_id": "20261027T165852_544444_ea7d55c2",
+  "storage_script_sha256": "a8635645df61d087018cfe03d1c0bf7118595965f247f67013c4b3ff6af371ef",
+  "command": [
+    "/usr/bin/python",
+    "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part3_storage/storage.py",
+    "run",
+    "--cross-page-index",
+    "60"
+  ],
+  "storage_reason": "真实CSV入库、8字段核验及新进程独立重跑新增0均已完成",
+  "three_way_samples": [
+    {
+      "phase": "run",
+      "sample": "first",
+      "url": "https://www.bspider.top/anjuke/",
+      "page": 1,
+      "page_row": 1,
+      "csv_line": 2,
+      "database_ids": [
+        1
+      ],
+      "record": {
+        "title": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "89.9㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2019年建造",
+        "price": "16465元/㎡"
+      },
+      "all_eight_equal": true
+    },
+    {
+      "phase": "run",
+      "sample": "cross_page",
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "page": 2,
+      "page_row": 1,
+      "csv_line": 62,
+      "database_ids": [
+        61
+      ],
+      "record": {
+        "title": "万科物业自营 朝中庭 业主诚心出售",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "85.7㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2018年建造",
+        "price": "16914元/㎡"
+      },
+      "all_eight_equal": true
+    },
+    {
+      "phase": "run",
+      "sample": "last",
+      "url": "https://www.bspider.top/anjuke/?page=8",
+      "page": 8,
+      "page_row": 60,
+      "csv_line": 438,
+      "database_ids": [
+        437
+      ],
+      "record": {
+        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+        "house": "荣盛鹿山府",
+        "address": "渝北中央公园金州大道,近万康路",
+        "struct": "3室2厅2卫",
+        "area": "99㎡",
+        "floor": "中层(共6层)",
+        "maketime": "2020年建造",
+        "price": "15960元/㎡"
+      },
+      "all_eight_equal": true
+    },
+    {
+      "phase": "rerun",
+      "sample": "first",
+      "url": "https://www.bspider.top/anjuke/",
+      "page": 1,
+      "page_row": 1,
+      "csv_line": 2,
+      "database_ids": [
+        1
+      ],
+      "record": {
+        "title": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "89.9㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2019年建造",
+        "price": "16465元/㎡"
+      },
+      "all_eight_equal": true
+    },
+    {
+      "phase": "rerun",
+      "sample": "cross_page",
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "page": 2,
+      "page_row": 1,
+      "csv_line": 62,
+      "database_ids": [
+        61
+      ],
+      "record": {
+        "title": "万科物业自营 朝中庭 业主诚心出售",
+        "house": "万科金域学府翰林菁华里",
+        "address": "南岸学府大道二塘路59号",
+        "struct": "3室2厅1卫",
+        "area": "85.7㎡",
+        "floor": "低层(共27层)",
+        "maketime": "2018年建造",
+        "price": "16914元/㎡"
+      },
+      "all_eight_equal": true
+    },
+    {
+      "phase": "rerun",
+      "sample": "last",
+      "url": "https://www.bspider.top/anjuke/?page=8",
+      "page": 8,
+      "page_row": 60,
+      "csv_line": 438,
+      "database_ids": [
+        437
+      ],
+      "record": {
+        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+        "house": "荣盛鹿山府",
+        "address": "渝北中央公园金州大道,近万康路",
+        "struct": "3室2厅2卫",
+        "area": "99㎡",
+        "floor": "中层(共6层)",
+        "maketime": "2020年建造",
+        "price": "15960元/㎡"
+      },
+      "all_eight_equal": true
+    }
+  ],
+  "files": [
+    {
+      "path": "data/houseinfo.csv",
+      "bytes": 83191,
+      "sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87"
+    },
+    {
+      "path": "part2_collection/csv_provenance.json",
+      "bytes": 178,
+      "sha256": "48b0b0f355e27e87b5de53d89c8a5e15ad9c46558f22fdceec2b7d6384b0109c"
+    },
+    {
+      "path": "part3_storage/storage.py",
+      "bytes": 24056,
+      "sha256": "a8635645df61d087018cfe03d1c0bf7118595965f247f67013c4b3ff6af371ef"
+    },
+    {
+      "path": "part3_storage/run_real_import.py",
+      "bytes": 10849,
+      "sha256": "f47a6f022f5be4bfd9c64abc20ed5c0203cf47baec498144a70bd1e97e16479d"
+    },
+    {
+      "path": "part3_storage/status.json",
+      "bytes": 869,
+      "sha256": "0d2317568d26b64f0411c6362c7fdb3bf0512ca0a576d410dc0a6c33c5fbae45"
+    },
+    {
+      "path": "part3_storage/evidence/first_import_result.json",
+      "bytes": 743,
+      "sha256": "d46876d388e15cd96624c91a73f444f85875a1d2dcc2a62f47b743f45aebd0f3"
+    },
+    {
+      "path": "part3_storage/evidence/rerun_result.json",
+      "bytes": 733,
+      "sha256": "d0f3674479d97f18afc08eb3108c86aa33610bf5a9a8a30d467e1d89e966058d"
+    },
+    {
+      "path": "part3_storage/evidence/samples_run.json",
+      "bytes": 4290,
+      "sha256": "436cb20d1a997f1a607561bb013ce1d33cd78995c257cae85a22d093ef52471e"
+    },
+    {
+      "path": "part3_storage/evidence/samples_rerun.json",
+      "bytes": 4290,
+      "sha256": "436cb20d1a997f1a607561bb013ce1d33cd78995c257cae85a22d093ef52471e"
+    },
+    {
+      "path": "part3_storage/logs/real_pipeline_20261027_165930_11522.stdout.txt",
+      "bytes": 8316,
+      "sha256": "067ee9554dd3863b907aaeb3853f307866289fb129c8886ca9ef0d251d8a70b8"
+    },
+    {
+      "path": "part3_storage/logs/real_pipeline_20261027_165930_11522.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
