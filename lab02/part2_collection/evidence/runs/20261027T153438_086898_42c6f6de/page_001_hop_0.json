@@ -1,0 +1,17 @@
+{
+  "requested_url": "http://www.bspider.top/anjuke/",
+  "url": "http://www.bspider.top/anjuke/",
+  "source_mode": "online",
+  "status_code": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "location": "",
+  "redirect_hop": 0,
+  "checked_at": "2026-10-27T15:34:41+08:00",
+  "raw_path": "evidence/runs/20261027T153438_086898_42c6f6de/page_001_hop_0.bin",
+  "raw_sha256": "216c25da22480d49c0e36148302e1dcc845620ee04ae22feb63a1dd194195b27",
+  "decoded_html_path": "evidence/runs/20261027T153438_086898_42c6f6de/page_001_hop_0.html",
+  "decoded_html_sha256": "216c25da22480d49c0e36148302e1dcc845620ee04ae22feb63a1dd194195b27",
+  "title": "访问验证-安居客 ws:3703571468",
+  "property_count": 0
+}

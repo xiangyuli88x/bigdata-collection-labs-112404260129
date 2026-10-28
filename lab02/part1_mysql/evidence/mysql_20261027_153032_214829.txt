@@ -1,0 +1,6 @@
+check_mysql.py | 2026-10-27T15:30:32+08:00
+Record writes: 0 (no CSV read, no INSERT/UPDATE/DELETE)
+ERROR: ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_user, USER() AS connection_user, @@character_set_connection AS connectio' at line 1")
+
+state=error schema_ok=False before_count=None
+Only missing-table CREATE was allowed. Record writes: 0.

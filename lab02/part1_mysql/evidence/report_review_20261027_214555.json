@@ -1,0 +1,245 @@
+{
+  "checked_at": "2026-10-27T21:45:55+08:00",
+  "read_only": true,
+  "record_writes": 0,
+  "first_stage_checked_at": "2026-10-27T15:33:17+08:00",
+  "historical_before_count": 0,
+  "queries": [
+    {
+      "sql": "SELECT VERSION() AS version, DATABASE() AS database_name, CURRENT_USER() AS account_name",
+      "rows": [
+        {
+          "version": "8.4.11",
+          "database_name": "smartpark_lab",
+          "account_name": "student@%"
+        }
+      ]
+    },
+    {
+      "sql": "SHOW DATABASES",
+      "rows": [
+        {
+          "Database": "information_schema"
+        },
+        {
+          "Database": "performance_schema"
+        },
+        {
+          "Database": "smartpark_lab"
+        }
+      ]
+    },
+    {
+      "sql": "USE smartpark_lab",
+      "rows": []
+    },
+    {
+      "sql": "SHOW TABLES",
+      "rows": [
+        {
+          "Tables_in_smartpark_lab": "houseinfo"
+        }
+      ]
+    },
+    {
+      "sql": "DESCRIBE houseinfo",
+      "rows": [
+        {
+          "Field": "id",
+          "Type": "int",
+          "Null": "NO",
+          "Key": "PRI",
+          "Default": null,
+          "Extra": "auto_increment"
+        },
+        {
+          "Field": "title",
+          "Type": "varchar(200)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "house",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "address",
+          "Type": "varchar(200)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "struct",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "area",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "floor",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "maketime",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "price",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        }
+      ]
+    },
+    {
+      "sql": "SELECT COUNT(*) AS current_count FROM houseinfo",
+      "rows": [
+        {
+          "current_count": 437
+        }
+      ]
+    }
+  ],
+  "identity": {
+    "version": "8.4.11",
+    "database_name": "smartpark_lab",
+    "account_name": "student@%"
+  },
+  "describe": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "title",
+      "Type": "varchar(200)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "house",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "address",
+      "Type": "varchar(200)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "struct",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "area",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "floor",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "maketime",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "price",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ],
+  "current_count": 437,
+  "schema_matches_first_stage": true,
+  "dependencies": {
+    "requests": "2.34.2",
+    "beautifulsoup4": "4.15.0",
+    "pymysql": "1.2.0"
+  },
+  "python_executable": "/usr/bin/python",
+  "stage3_result_reference": "../part3_storage/status.json",
+  "stage3_result": {
+    "stage": 3,
+    "state": "ready",
+    "checked_at": "2026-10-27T16:59:35+08:00",
+    "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
+    "before_count": 0,
+    "after_count": 437,
+    "inserted_count": 437,
+    "rerun_inserted_count": 0,
+    "samples_match": true,
+    "actual_import_completed": true,
+    "reason": "真实CSV入库、8字段核验及新进程独立重跑新增0均已完成",
+    "csv_rows": 437,
+    "committed_batches": [
+      {
+        "phase": "small_real_sample",
+        "inserted_count": 3
+      },
+      {
+        "phase": "all_csv",
+        "inserted_count": 434
+      }
+    ],
+    "final_db_fingerprint": "f0e7dc6aadd6a3e034b837a67904aec6cdddc99d30644c489967c909c6f5af9d",
+    "cross_page_sample_verified": true,
+    "log_file": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part3_storage/logs/20261027_085934_run_11528.jsonl"
+  }
+}

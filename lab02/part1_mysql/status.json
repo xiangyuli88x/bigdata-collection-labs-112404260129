@@ -1,0 +1,432 @@
+{
+  "stage": 1,
+  "state": "ready",
+  "checked_at": "2026-10-27T15:33:17+08:00",
+  "version": "8.4.11",
+  "database": "smartpark_lab",
+  "table": "houseinfo",
+  "before_count": 0,
+  "schema_ok": true,
+  "queries": [
+    {
+      "sql": "SELECT VERSION() AS version, DATABASE() AS database_name, CURRENT_USER() AS account_name, USER() AS connection_user, @@character_set_connection AS connection_charset",
+      "params": null,
+      "rows": [
+        {
+          "version": "8.4.11",
+          "database_name": "smartpark_lab",
+          "account_name": "student@%",
+          "connection_user": "student@172.18.0.2",
+          "connection_charset": "utf8mb4"
+        }
+      ]
+    },
+    {
+      "sql": "SHOW DATABASES",
+      "params": null,
+      "rows": [
+        {
+          "Database": "information_schema"
+        },
+        {
+          "Database": "performance_schema"
+        },
+        {
+          "Database": "smartpark_lab"
+        }
+      ]
+    },
+    {
+      "sql": "USE smartpark_lab",
+      "params": null,
+      "rows": []
+    },
+    {
+      "sql": "SHOW TABLES",
+      "params": null,
+      "rows": [
+        {
+          "Tables_in_smartpark_lab": "houseinfo"
+        }
+      ]
+    },
+    {
+      "sql": "SHOW TABLES",
+      "params": null,
+      "rows": [
+        {
+          "Tables_in_smartpark_lab": "houseinfo"
+        }
+      ]
+    },
+    {
+      "sql": "DESCRIBE houseinfo",
+      "params": null,
+      "rows": [
+        {
+          "Field": "id",
+          "Type": "int",
+          "Null": "NO",
+          "Key": "PRI",
+          "Default": null,
+          "Extra": "auto_increment"
+        },
+        {
+          "Field": "title",
+          "Type": "varchar(200)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "house",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "address",
+          "Type": "varchar(200)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "struct",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "area",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "floor",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "maketime",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "price",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        }
+      ]
+    },
+    {
+      "sql": "SHOW FULL COLUMNS FROM houseinfo",
+      "params": null,
+      "rows": [
+        {
+          "Field": "id",
+          "Type": "int",
+          "Collation": null,
+          "Null": "NO",
+          "Key": "PRI",
+          "Default": null,
+          "Extra": "auto_increment",
+          "Privileges": "select,insert,update,references",
+          "Comment": "自增长主键"
+        },
+        {
+          "Field": "title",
+          "Type": "varchar(200)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "标题"
+        },
+        {
+          "Field": "house",
+          "Type": "varchar(50)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "楼盘"
+        },
+        {
+          "Field": "address",
+          "Type": "varchar(200)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "地址"
+        },
+        {
+          "Field": "struct",
+          "Type": "varchar(50)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "户型"
+        },
+        {
+          "Field": "area",
+          "Type": "varchar(20)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "建筑面积"
+        },
+        {
+          "Field": "floor",
+          "Type": "varchar(20)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "楼层"
+        },
+        {
+          "Field": "maketime",
+          "Type": "varchar(20)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "建造年代"
+        },
+        {
+          "Field": "price",
+          "Type": "varchar(20)",
+          "Collation": "utf8mb4_0900_ai_ci",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": "",
+          "Privileges": "select,insert,update,references",
+          "Comment": "每平方米单价"
+        }
+      ]
+    },
+    {
+      "sql": "SELECT TABLE_COLLATION, ENGINE FROM information_schema.TABLES WHERE TABLE_SCHEMA=%s AND TABLE_NAME=%s",
+      "params": [
+        "smartpark_lab",
+        "houseinfo"
+      ],
+      "rows": [
+        {
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci",
+          "ENGINE": "InnoDB"
+        }
+      ]
+    },
+    {
+      "sql": "SHOW CREATE TABLE houseinfo",
+      "params": null,
+      "rows": [
+        {
+          "Table": "houseinfo",
+          "Create Table": "CREATE TABLE `houseinfo` (\n  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增长主键',\n  `title` varchar(200) DEFAULT NULL COMMENT '标题',\n  `house` varchar(50) DEFAULT NULL COMMENT '楼盘',\n  `address` varchar(200) DEFAULT NULL COMMENT '地址',\n  `struct` varchar(50) DEFAULT NULL COMMENT '户型',\n  `area` varchar(20) DEFAULT NULL COMMENT '建筑面积',\n  `floor` varchar(20) DEFAULT NULL COMMENT '楼层',\n  `maketime` varchar(20) DEFAULT NULL COMMENT '建造年代',\n  `price` varchar(20) DEFAULT NULL COMMENT '每平方米单价',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"
+        }
+      ]
+    },
+    {
+      "sql": "SELECT COUNT(*) AS before_count FROM houseinfo",
+      "params": null,
+      "rows": [
+        {
+          "before_count": 0
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "python_version": "3.12.3",
+  "python_executable": "/usr/bin/python",
+  "created_table": false,
+  "record_writes": 0,
+  "connection": {
+    "host": "mysql",
+    "port": 3306,
+    "user": "student",
+    "database": "smartpark_lab",
+    "charset": "utf8mb4"
+  },
+  "environment_checked_at": "2026-10-27T15:30:31.3838545+08:00",
+  "environment_ok": true,
+  "current_user": "student@%",
+  "connection_user": "student@172.18.0.2",
+  "connection_charset": "utf8mb4",
+  "databases": [
+    {
+      "Database": "information_schema"
+    },
+    {
+      "Database": "performance_schema"
+    },
+    {
+      "Database": "smartpark_lab"
+    }
+  ],
+  "tables_before": [
+    "houseinfo"
+  ],
+  "table_existed_before": true,
+  "tables_after": [
+    "houseinfo"
+  ],
+  "describe": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "title",
+      "Type": "varchar(200)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "house",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "address",
+      "Type": "varchar(200)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "struct",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "area",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "floor",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "maketime",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "price",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ],
+  "table_info": {
+    "TABLE_COLLATION": "utf8mb4_0900_ai_ci",
+    "ENGINE": "InnoDB"
+  },
+  "show_create_table": [
+    {
+      "Table": "houseinfo",
+      "Create Table": "CREATE TABLE `houseinfo` (\n  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增长主键',\n  `title` varchar(200) DEFAULT NULL COMMENT '标题',\n  `house` varchar(50) DEFAULT NULL COMMENT '楼盘',\n  `address` varchar(200) DEFAULT NULL COMMENT '地址',\n  `struct` varchar(50) DEFAULT NULL COMMENT '户型',\n  `area` varchar(20) DEFAULT NULL COMMENT '建筑面积',\n  `floor` varchar(20) DEFAULT NULL COMMENT '楼层',\n  `maketime` varchar(20) DEFAULT NULL COMMENT '建造年代',\n  `price` varchar(20) DEFAULT NULL COMMENT '每平方米单价',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"
+    }
+  ],
+  "schema_differences": [],
+  "evidence_files": [
+    "evidence/environment.json",
+    "evidence/environment_20261027_153031_581.json",
+    "evidence/mysql_20261027_153032_214829.json",
+    "evidence/mysql_20261027_153032_214829.txt",
+    "evidence/mysql_20261027_153046_419060.json",
+    "evidence/mysql_20261027_153046_419060.txt",
+    "evidence/mysql_20261027_153317_689001.json",
+    "evidence/mysql_20261027_153317_689001.txt",
+    "evidence/mysql_cli.txt",
+    "evidence/package_validation.json",
+    "evidence/package_validation_initial_failure.txt",
+    "evidence/report_refinement.json",
+    "evidence/report_review_20261027_214555.json",
+    "evidence/user_screenshots.json",
+    "images/01_environment.jpg",
+    "images/02_mysql_queries.jpg",
+    "images/03_schema_count.jpg",
+    "images/04_safe_recheck.jpg",
+    "images/05_mysql_start.png",
+    "images/06_mysql_console.png",
+    "images/07_mysql_count.png",
+    "verification.ipynb"
+  ],
+  "report_file": "REPORT_part1.md",
+  "package_checked_at": "2026-10-27T21:51:34+08:00",
+  "manual_startup_screenshot_completed": true,
+  "screenshots_kind": "Actual JupyterLab screenshots plus user-provided original Windows terminal screenshots; raw mysql CLI transcript provided separately.",
+  "manual_mysql_console_screenshot_completed": true,
+  "manual_terminal_count_screenshot_completed": true,
+  "manual_start_course_screenshot_completed": false,
+  "manual_screenshot_pending": [],
+  "manual_terminal_current_count": 0,
+  "exact_before_count_zero_terminal_screenshot_completed": false
+}

@@ -1,0 +1,43 @@
+{
+  "received_and_checked_at": "2026-10-27T16:05:20.1217684+08:00",
+  "screenshot_capture_time": null,
+  "source": "User-provided screenshots in this chat; original bytes copied without edits.",
+  "files": [
+    {
+      "file": "images/05_mysql_start.png",
+      "source_attachment": "codex-clipboard-b7c2c17c-1c81-4055-a17c-51f61314242c.png",
+      "bytes": 113892,
+      "sha256": "1a57c18c48a44ed80015f749dcceaedb7db05d052259736aa3e153ad8d11381c",
+      "unchanged_original": true
+    },
+    {
+      "file": "images/06_mysql_console.png",
+      "source_attachment": "codex-clipboard-acc4bb6a-dcff-4f0a-90f6-14714b5814ed.png",
+      "bytes": 155853,
+      "sha256": "1418f8b23a510598d0640236e8a397e5ce0735b80129497bbbc54c3f6870f880",
+      "unchanged_original": true
+    },
+    {
+      "file": "images/07_mysql_count.png",
+      "source_attachment": "codex-clipboard-92ff8050-e392-4369-ac36-ecae6a91f474.png",
+      "bytes": 150215,
+      "sha256": "67ff802800274050c0650a3ec37d15b04e4c105288ca73d59ee655dc790b1338",
+      "unchanged_original": true,
+      "received_and_checked_at": "2026-10-27T16:05:20.1217684+08:00"
+    }
+  ],
+  "mysql_startup_success_visible": true,
+  "mysql_console_visible": true,
+  "use_smartpark_lab_success_visible": true,
+  "show_tables_houseinfo_visible": true,
+  "describe_nine_columns_visible": true,
+  "terminal_count_result_visible": true,
+  "start_course_process_visible": false,
+  "pending": [],
+  "initial_screenshots_checked_at": "2026-10-27T16:03:19.3796792+08:00",
+  "terminal_current_count": 0,
+  "terminal_count_evidence_file": "images/07_mysql_count.png",
+  "terminal_count_query": "SELECT COUNT(*) AS current_count FROM houseinfo;",
+  "exact_before_count_zero_terminal_screenshot_completed": false,
+  "query_alias_note": "Platform example uses before_count; original terminal screenshot shows current_count=0. Historical before_count=0 exists in Jupyter output and SQL logs. No claim is made about character-for-character grading."
+}

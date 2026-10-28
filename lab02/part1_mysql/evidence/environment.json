@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-27T15:30:31.3838545+08:00",
+  "read_only": true,
+  "environment_ok": true,
+  "checks": {
+    "workspace_healthy": true,
+    "mysql_healthy": true,
+    "d_drive_workspace_bind": true,
+    "l05_volume_in_use": true,
+    "mysql_no_host_port": true,
+    "jupyter_api_200": true,
+    "shared_course_network": true
+  },
+  "docker_client_version": "29.8.0",
+  "docker_engine_version": "29.8.0",
+  "compose_version": "5.5.1",
+  "workspace": {
+    "name": "smartpark-student-course-workspace-1",
+    "image": "smartpark-course-workspace:phase3",
+    "image_id": "sha256:8c55afe7589e7df19a4475dfcebe96a6dbf21d1a9ccca8bd08cfe054cc1cee77",
+    "running": true,
+    "health": "healthy",
+    "started_at": "2026-10-27T07:07:51.095318374Z",
+    "mounts": [
+      {
+        "Type": "bind",
+        "Name": null,
+        "Source": "D:\\大数据采集与处理-学生实验环境\\certificates",
+        "Destination": "/home/pwuser/certificates",
+        "RW": false
+      },
+      {
+        "Type": "bind",
+        "Name": null,
+        "Source": "D:\\大数据采集与处理-学生实验环境\\labs",
+        "Destination": "/home/pwuser/labs",
+        "RW": false
+      },
+      {
+        "Type": "bind",
+        "Name": null,
+        "Source": "D:\\大数据采集与处理-学生实验环境\\workspace",
+        "Destination": "/home/pwuser/workspace",
+        "RW": true
+      },
+      {
+        "Type": "bind",
+        "Name": null,
+        "Source": "D:\\大数据采集与处理-学生实验环境\\scripts",
+        "Destination": "/opt/course/scripts",
+        "RW": false
+      }
+    ],
+    "published_ports": {
+      "8888/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "8888"
+        }
+      ]
+    },
+    "networks": [
+      "smartpark-student_default"
+    ]
+  },
+  "mysql": {
+    "name": "smartpark-student-mysql-1",
+    "image": "mysql:8.4.11",
+    "image_id": "sha256:85b9bf2e29cf836ecb8c2a15a935d4ba0c606631dff1dd79531a11983c638f2a",
+    "running": true,
+    "health": "healthy",
+    "started_at": "2026-10-27T07:17:32.937239583Z",
+    "mounts": [
+      {
+        "Type": "volume",
+        "Name": "smartpark-student_l05-mysql-data",
+        "Source": "/var/lib/docker/volumes/smartpark-student_l05-mysql-data/_data",
+        "Destination": "/var/lib/mysql",
+        "RW": true
+      }
+    ],
+    "published_ports": {
+      "3306/tcp": null,
+      "33060/tcp": null
+    },
+    "networks": [
+      "smartpark-student_default"
+    ]
+  },
+  "volume": {
+    "name": "smartpark-student_l05-mysql-data",
+    "created_at": "2026-10-27T07:17:32Z",
+    "driver": "local",
+    "mountpoint": "/var/lib/docker/volumes/smartpark-student_l05-mysql-data/_data"
+  },
+  "jupyter": {
+    "url": "http://127.0.0.1:8888/api/status",
+    "status_code": 200
+  },
+  "teaching_helper": {
+    "action": "Check",
+    "exit_code": 0,
+    "output": [
+      "[PASS] Docker课程MySQL保护检查通过；Windows本机MySQL不会被操作。",
+      "[PASS] 仅检查完成，没有启动、停止或修改服务。"
+    ]
+  },
+  "configured_by": "父聊天已配置；本次只读复用并核验，不重装、不重建、不改密码。"
+}

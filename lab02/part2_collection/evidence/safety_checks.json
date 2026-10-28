@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-10-27T15:39:34+08:00",
+  "checks": [
+    {
+      "name": "固定8字段顺序",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "href 通过 urljoin 补全",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "https://www.anjuke.com/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "//example.org/anjuke/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "/other/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "file:///tmp/a"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "javascript:void(0)"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "http://www.bspider.top.evil/anjuke/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "http://student@www.bspider.top/anjuke/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "http://www.bspider.top:9999/anjuke/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "http://www.bspider.top/anjuke/../other/"
+    },
+    {
+      "name": "拒绝越站或异常链接",
+      "passed": true,
+      "detail": "http://www.bspider.top/anjuke/%2e%2e/other/"
+    },
+    {
+      "name": "真实响应文件存在",
+      "passed": true,
+      "detail": "evidence/runs/20261027T153438_086898_42c6f6de/page_001_hop_0.html"
+    },
+    {
+      "name": "原始响应与解码页面哈希及内容一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "真实访问验证页立即停止",
+      "passed": true,
+      "detail": "教学站返回访问验证页，立即停止自动采集"
+    },
+    {
+      "name": "Notebook main([]) 不读取 kernel -f",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "文件 SHA256 可复核",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "不明来源文件拒绝作为采集CSV",
+      "passed": true,
+      "detail": "已有CSV没有可验证来源，保留该文件，不覆盖"
+    },
+    {
+      "name": "不明来源文件保持字节不变",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "状态协议字段完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "来源受阻未误标 ready",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "无来源时CSV路径和hash为空",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "无真实房源时数量为零",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "未生成标准CSV",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 24,
+  "failed": 0,
+  "response": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/runs/20261027T153438_086898_42c6f6de/page_001_hop_0.html",
+  "response_sha256": "216c25da22480d49c0e36148302e1dcc845620ee04ae22feb63a1dd194195b27",
+  "scope": "代码边界与真实验证页识别；不含真实房源字段、在线翻页或CSV业务验收"
+}

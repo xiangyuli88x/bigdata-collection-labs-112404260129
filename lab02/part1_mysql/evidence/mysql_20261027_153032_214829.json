@@ -1,0 +1,31 @@
+{
+  "stage": 1,
+  "state": "error",
+  "checked_at": "2026-10-27T15:30:32+08:00",
+  "version": null,
+  "database": "smartpark_lab",
+  "table": "houseinfo",
+  "before_count": null,
+  "schema_ok": false,
+  "queries": [],
+  "warnings": [],
+  "python_version": "3.12.3",
+  "python_executable": "/usr/bin/python",
+  "created_table": false,
+  "record_writes": 0,
+  "connection": {
+    "host": "mysql",
+    "port": 3306,
+    "user": "student",
+    "database": "smartpark_lab",
+    "charset": "utf8mb4"
+  },
+  "environment_checked_at": "2026-10-27T15:30:31.3838545+08:00",
+  "environment_ok": true,
+  "error": "ProgrammingError: (1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_user, USER() AS connection_user, @@character_set_connection AS connectio' at line 1\")",
+  "evidence_files": [
+    "evidence/environment.json",
+    "evidence/mysql_20261027_153032_214829.json",
+    "evidence/mysql_20261027_153032_214829.txt"
+  ]
+}

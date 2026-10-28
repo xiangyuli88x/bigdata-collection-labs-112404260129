@@ -1,0 +1,12 @@
+{
+  "script": "browser_collect.py",
+  "state": "actual_selenium_first8_passed",
+  "pages": 8,
+  "raw_count": 480,
+  "csv_rows": 437,
+  "duplicates": 43,
+  "csv_equal_to_existing": true,
+  "existing_csv_preserved": true,
+  "database_write_code": false,
+  "result_file": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/browser_runs/20261027_213923_b024e2d0/result.json"
+}

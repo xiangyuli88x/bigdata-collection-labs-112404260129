@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-10-27T21:51:34+08:00",
+  "state": "pass",
+  "notebook_code_cells": 4,
+  "notebook_errors": 0,
+  "report_links_ok": true,
+  "images": [
+    {
+      "file": "images/01_environment.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "e39964ce4bbb7615da2b6fc0e6f7e2320e04113cbdc13a9a1a0e466d6ebbea3a"
+    },
+    {
+      "file": "images/02_mysql_queries.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "13979060411fe0b9b9af29dbb537a997f33f4266355648fab08d04af349ad601"
+    },
+    {
+      "file": "images/03_schema_count.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "79a9b723b82f84b63b47e3864ecc6b0911c4cfc296bb55f720b01c2385fbc869"
+    },
+    {
+      "file": "images/04_safe_recheck.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ea2e5898b7c62a50c6ac9373f8f897914dec47fccb74ce90bbf211db40651043"
+    },
+    {
+      "file": "images/05_mysql_start.png",
+      "width": 1758,
+      "height": 1001,
+      "sha256": "1a57c18c48a44ed80015f749dcceaedb7db05d052259736aa3e153ad8d11381c"
+    },
+    {
+      "file": "images/06_mysql_console.png",
+      "width": 1704,
+      "height": 1338,
+      "sha256": "1418f8b23a510598d0640236e8a397e5ce0735b80129497bbbc54c3f6870f880"
+    },
+    {
+      "file": "images/07_mysql_count.png",
+      "width": 1197,
+      "height": 1366,
+      "sha256": "67ff802800274050c0650a3ec37d15b04e4c105288ca73d59ee655dc790b1338"
+    }
+  ],
+  "manual_screenshot_review": {
+    "received_and_checked_at": "2026-10-27T16:05:20.1217684+08:00",
+    "screenshot_capture_time": null,
+    "source": "User-provided screenshots in this chat; original bytes copied without edits.",
+    "files": [
+      {
+        "file": "images/05_mysql_start.png",
+        "source_attachment": "codex-clipboard-b7c2c17c-1c81-4055-a17c-51f61314242c.png",
+        "bytes": 113892,
+        "sha256": "1a57c18c48a44ed80015f749dcceaedb7db05d052259736aa3e153ad8d11381c",
+        "unchanged_original": true
+      },
+      {
+        "file": "images/06_mysql_console.png",
+        "source_attachment": "codex-clipboard-acc4bb6a-dcff-4f0a-90f6-14714b5814ed.png",
+        "bytes": 155853,
+        "sha256": "1418f8b23a510598d0640236e8a397e5ce0735b80129497bbbc54c3f6870f880",
+        "unchanged_original": true
+      },
+      {
+        "file": "images/07_mysql_count.png",
+        "source_attachment": "codex-clipboard-92ff8050-e392-4369-ac36-ecae6a91f474.png",
+        "bytes": 150215,
+        "sha256": "67ff802800274050c0650a3ec37d15b04e4c105288ca73d59ee655dc790b1338",
+        "unchanged_original": true,
+        "received_and_checked_at": "2026-10-27T16:05:20.1217684+08:00"
+      }
+    ],
+    "mysql_startup_success_visible": true,
+    "mysql_console_visible": true,
+    "use_smartpark_lab_success_visible": true,
+    "show_tables_houseinfo_visible": true,
+    "describe_nine_columns_visible": true,
+    "terminal_count_result_visible": true,
+    "start_course_process_visible": false,
+    "pending": [],
+    "initial_screenshots_checked_at": "2026-10-27T16:03:19.3796792+08:00",
+    "terminal_current_count": 0,
+    "terminal_count_evidence_file": "images/07_mysql_count.png",
+    "terminal_count_query": "SELECT COUNT(*) AS current_count FROM houseinfo;",
+    "exact_before_count_zero_terminal_screenshot_completed": false,
+    "query_alias_note": "Platform example uses before_count; original terminal screenshot shows current_count=0. Historical before_count=0 exists in Jupyter output and SQL logs. No claim is made about character-for-character grading."
+  },
+  "note": "文件验收；数据库基线时间保持为 status.checked_at，不冒充重新查库。"
+}

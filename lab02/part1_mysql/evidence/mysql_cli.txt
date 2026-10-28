@@ -1,0 +1,57 @@
+Actual MySQL CLI batch execution | 2026-10-27T15:31:54.4827853+08:00
+--------------
+SELECT VERSION() AS version, DATABASE() AS database_name, CURRENT_USER() AS account_name
+--------------
+
++---------+---------------+--------------+
+| version | database_name | account_name |
++---------+---------------+--------------+
+| 8.4.11  | smartpark_lab | student@%    |
++---------+---------------+--------------+
+--------------
+SHOW DATABASES
+--------------
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| performance_schema |
+| smartpark_lab      |
++--------------------+
+--------------
+SHOW TABLES
+--------------
+
++-------------------------+
+| Tables_in_smartpark_lab |
++-------------------------+
+| houseinfo               |
++-------------------------+
+--------------
+DESCRIBE houseinfo
+--------------
+
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| id       | int          | NO   | PRI | NULL    | auto_increment |
+| title    | varchar(200) | YES  |     | NULL    |                |
+| house    | varchar(50)  | YES  |     | NULL    |                |
+| address  | varchar(200) | YES  |     | NULL    |                |
+| struct   | varchar(50)  | YES  |     | NULL    |                |
+| area     | varchar(20)  | YES  |     | NULL    |                |
+| floor    | varchar(20)  | YES  |     | NULL    |                |
+| maketime | varchar(20)  | YES  |     | NULL    |                |
+| price    | varchar(20)  | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+--------------
+SELECT COUNT(*) AS before_count FROM houseinfo
+--------------
+
++--------------+
+| before_count |
++--------------+
+|            0 |
++--------------+
+exit_code=0

@@ -1,0 +1,17 @@
+First file validation attempt failed at the PNG signature assertion:
+  File "part1_mysql/finalize_evidence.py", line 27, in <module>
+    assert content.startswith(b'\x89PNG\r\n\x1a\n')
+AssertionError
+
+Inspection of the saved screenshot bytes returned:
+FF-D8-FF-E0-00-10-4A-46-49-46-00-01-01-00-00-01
+
+Cause: the screenshot API returned JPEG bytes, but the first saved filenames used .png.
+Fix: renamed the four own screenshot files to .jpg, updated report links, and verify JPEG format and dimensions. Screenshot pixels were not changed.
+
+Second validation attempt failed before file validation:
+  File "part1_mysql/finalize_evidence.py", line 10, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+Fix: used standard-library JPEG marker parsing for signature and dimensions. No package was installed and no image pixels were changed.

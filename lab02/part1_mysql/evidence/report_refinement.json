@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-27T21:50:23.2566607+08:00",
+  "scope": "第一阶段报告完善；仅修改 part1_mysql 内文件",
+  "report_file": "REPORT_part1.md",
+  "original_report_backup": "evidence/report_before_refinement_20261027_214555.md",
+  "original_report_sha256": "0a5adfacc425b85653f2b44a05d5bf2e0ed826bce8348f172176daf01dac26aa",
+  "revised_report_sha256": "ffdd3d60cc4e1bb7256503acc9a636db680fb0270f367600f53b78c36e9ccff2",
+  "student_information_source": "../../lab01/REPORT.md",
+  "student_information": {
+    "class": "数据1241",
+    "name": "李翔宇",
+    "student_id": "112404260129"
+  },
+  "fresh_read_only_review": "evidence/report_review_20261027_214555.json",
+  "preserved_first_stage_checked_at": "2026-10-27T15:33:17+08:00",
+  "preserved_historical_before_count": 0,
+  "current_count_at_review": 437,
+  "database_writes_during_refinement": 0,
+  "strict_alias_screenshot_gap": "Historical terminal current_count=0 screenshot remains original; no before_count=0 terminal image was fabricated.",
+  "improvements": [
+    "实验模板基本信息、目的、环境、步骤和解释",
+    "完整建表SQL、9列含义、主键和字符集说明",
+    "原始截图与日志相对路径",
+    "历史基线0与后续437的时间线",
+    "仅第一阶段提交检查及真实剩余项"
+  ]
+}
