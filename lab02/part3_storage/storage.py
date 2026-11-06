@@ -237,6 +237,10 @@ def insert_batch(connection, cursor, records, expected_snapshot, log, table="hou
             raise StorageError("已有记录发生变化，撤销本次事务")
         # 先构建一次写入后的八字段集合，再核对本批记录。
         after_records = {row[1:] for row in after}
+        
+       # if any(record not in {row[1:] for row in after} for record in records):
+        #     raise StorageError("事务内8字段核对失败，撤销本次事务")
+        
         if any(record not in after_records for record in records):
             raise StorageError("事务内8字段核对失败，撤销本次事务")
         connection.commit()
