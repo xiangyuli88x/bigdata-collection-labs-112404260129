@@ -235,7 +235,9 @@ def insert_batch(connection, cursor, records, expected_snapshot, log, table="hou
         # 保留每条既有记录；不依赖id防重，id只用于识别意外修改。
         if not set(current).issubset(set(after)):
             raise StorageError("已有记录发生变化，撤销本次事务")
-        if any(record not in {row[1:] for row in after} for record in records):
+        # 先构建一次写入后的八字段集合，再核对本批记录。
+        after_records = {row[1:] for row in after}
+        if any(record not in after_records for record in records):
             raise StorageError("事务内8字段核对失败，撤销本次事务")
         connection.commit()
         log("batch_committed", table=table, before_count=len(current), after_count=len(after),
