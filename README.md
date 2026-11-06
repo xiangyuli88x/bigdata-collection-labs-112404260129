@@ -22,7 +22,7 @@
 | 第二部分 | 房源解析、分页与CSV保存 | [房源采集与CSV](lab02/part2_collection/REPORT_part2.md) |
 | 第三部分 | CSV批量入库、事务、去重及结果核对 | [MySQL存储](lab02/part3_storage/REPORT_part3.md) |
 
-本目录当前保存的是**前8页版本：480条原始记录，按8字段完全相同去重后为437条**。数据文件为 [`lab02/data/houseinfo.csv`](lab02/data/houseinfo.csv)。这里的历史报告和截图对应437条，不代表后来完成的10页498条版本。
+实验二已采集到第 10 页末页，共 600 条原始房源。按 8 个字段完全相同去重后，得到 **498 条**记录。MySQL 已核验全部 498 条记录，独立重跑新增 0 条。数据见 [houseinfo.csv](lab02/data/houseinfo.csv)，核验结果见 [入库报告](lab02/part3_storage/REPORT_part3.md)。
 
 ## 目录结构
 
