@@ -71,7 +71,7 @@
   "csv_sha256": "e98227526b23c9f3574dcf65a6f3170e15813041a114791cdc85a0e4030bbbe3",
   "returncode": 0,
   "stdout_file": "logs/real_pipeline_20261106_144457_4252.stdout.txt",
-  "stderr_file": "logs/real_pipeline_20261106_144457_4252.stderr.txt",
+  "stderr_file": null,
   "reason": "真实网页来源、CSV与数据库8字段一致；少量/全量入库及新进程重跑新增0通过",
   "source_mode": "browser_snapshot",
   "cross_page_index": 60,
@@ -270,11 +270,7 @@
       "path": "part3_storage/logs/real_pipeline_20261106_144457_4252.stdout.txt",
       "bytes": 9804,
       "sha256": "2a9a0f660cd22dab6a7f7bc5844c410b7744aa431200771e05be8d4d377cc976"
-    },
-    {
-      "path": "part3_storage/logs/real_pipeline_20261106_144457_4252.stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
-  ]
+  ],
+  "stderr_empty": true
 }
