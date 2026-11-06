@@ -27,7 +27,7 @@ BASE = Path(__file__).resolve().parent
 
 def arguments(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--pages", type=int, choices=range(1, 9), default=8, metavar="1-8")
+    parser.add_argument("--pages", type=int, choices=range(1, 1001), default=1000, metavar="1-1000")
     parser.add_argument("--timeout", type=float, default=25, help="单页等待秒数，默认25")
     parser.add_argument("--delay", type=float, default=1, help="两页间隔秒数，至少1秒")
     parser.add_argument("--headed", action="store_true", help="显示浏览器窗口；需要桌面环境")

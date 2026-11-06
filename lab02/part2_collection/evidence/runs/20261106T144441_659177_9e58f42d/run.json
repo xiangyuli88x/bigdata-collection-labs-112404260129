@@ -1,0 +1,124 @@
+{
+  "run_id": "20261106T144441_659177_9e58f42d",
+  "command": "trial",
+  "source_mode": "browser_snapshot",
+  "started_at": "2026-11-06T14:44:41+08:00",
+  "pages": [
+    {
+      "page": 1,
+      "requested_url": "http://www.bspider.top/anjuke/",
+      "url": "https://www.bspider.top/anjuke/",
+      "count": 60,
+      "fingerprint": "db04e3f707474c68c8339d2e8b9a2ff033e670f5819f66908035e8f35d356c2e",
+      "response": {
+        "requested_url": "http://www.bspider.top/anjuke/",
+        "url": "https://www.bspider.top/anjuke/",
+        "source_mode": "browser_snapshot",
+        "source_file": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/browser_full/page_001.html",
+        "encoding": "utf-8-sig",
+        "status_code": null,
+        "offline_replay": true,
+        "browser_sha256": "48522848a3dde1a6d0c2fa0ee082f7d61f878dd0096b71a453f67c3ed31ff165",
+        "captured_at": "2026-10-27T22:14:57+08:00",
+        "browser_property_count": 60,
+        "capture_method": "browser_dom_serialization",
+        "content_representation": "browser_dom_utf8",
+        "checked_at": "2026-11-06T14:44:42+08:00",
+        "decoded_html_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_001_hop_0.html",
+        "decoded_html_sha256": "48522848a3dde1a6d0c2fa0ee082f7d61f878dd0096b71a453f67c3ed31ff165",
+        "title": "重庆二手房房产网，重庆二手房出售，重庆买房购房交易信息 - 58安居客",
+        "property_count": 60,
+        "snapshot_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_001_hop_0_browser_dom.html",
+        "snapshot_sha256": "48522848a3dde1a6d0c2fa0ee082f7d61f878dd0096b71a453f67c3ed31ff165"
+      },
+      "records_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_001_records.json",
+      "next_url": "https://www.bspider.top/anjuke/?page=2",
+      "next_button": {
+        "html": "<a class=\"next next-active\" data-npv=\"\" data-v-29d65fc6=\"\" href=\"?page=2\">下一页</a>",
+        "href": "?page=2",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=2"
+      }
+    },
+    {
+      "page": 2,
+      "requested_url": "https://www.bspider.top/anjuke/?page=2",
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "count": 60,
+      "fingerprint": "86eb6337e0b857eb7d6dc6c5f05bf4cd6fc840e0dde02d0f3f12bd4d376c77bf",
+      "response": {
+        "requested_url": "https://www.bspider.top/anjuke/?page=2",
+        "url": "https://www.bspider.top/anjuke/?page=2",
+        "source_mode": "browser_snapshot",
+        "source_file": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/browser_full/page_002.html",
+        "encoding": "utf-8-sig",
+        "status_code": null,
+        "offline_replay": true,
+        "browser_sha256": "a17e4796e936b02a0a3faee9c9c1bcf59f95614da2e0ed6f9a43dbd3fa2c2ee9",
+        "captured_at": "2026-10-27T22:15:01+08:00",
+        "browser_property_count": 60,
+        "capture_method": "browser_dom_serialization",
+        "content_representation": "browser_dom_utf8",
+        "checked_at": "2026-11-06T14:44:42+08:00",
+        "decoded_html_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_002_hop_0.html",
+        "decoded_html_sha256": "a17e4796e936b02a0a3faee9c9c1bcf59f95614da2e0ed6f9a43dbd3fa2c2ee9",
+        "title": "重庆二手房房产网，重庆二手房出售，重庆买房购房交易信息 - 58安居客",
+        "property_count": 60,
+        "snapshot_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_002_hop_0_browser_dom.html",
+        "snapshot_sha256": "a17e4796e936b02a0a3faee9c9c1bcf59f95614da2e0ed6f9a43dbd3fa2c2ee9"
+      },
+      "records_path": "evidence/runs/20261106T144441_659177_9e58f42d/page_002_records.json",
+      "next_url": "https://www.bspider.top/anjuke/?page=3",
+      "next_button": {
+        "html": "<a class=\"next next-active\" data-npv=\"\" data-v-29d65fc6=\"\" href=\"?page=3\">下一页</a>",
+        "href": "?page=3",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=3"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-06T14:44:42+08:00",
+      "message": "页面解析成功",
+      "page": 1,
+      "url": "https://www.bspider.top/anjuke/",
+      "count": 60,
+      "accumulated": 60,
+      "next_href": "?page=2",
+      "next_url": "https://www.bspider.top/anjuke/?page=2",
+      "explicitly_disabled": false
+    },
+    {
+      "at": "2026-11-06T14:44:42+08:00",
+      "message": "页面解析成功",
+      "page": 2,
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "count": 60,
+      "accumulated": 120,
+      "next_href": "?page=3",
+      "next_url": "https://www.bspider.top/anjuke/?page=3",
+      "explicitly_disabled": false
+    },
+    {
+      "at": "2026-11-06T14:44:43+08:00",
+      "message": "本次运行结束",
+      "complete": false
+    }
+  ],
+  "complete": false,
+  "browser_manifest": {
+    "source": "browser_saved",
+    "provider": "Selenium已保存的真实网页，经末页规则修正后恢复导出",
+    "manifest_path": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/browser_full/manifest.json",
+    "manifest_sha256": "8d8ebf9c745f6a3df748118b32846295c8c76c125927ce3434982a714e31c98f",
+    "capture_method": "browser_dom_serialization",
+    "captured_at": "2026-10-27T22:14:51+08:00"
+  },
+  "raw_count": 120,
+  "deduplicated_count": 119,
+  "trial_verified": true,
+  "stop_reason": "两页试采结束，尚未执行完整采集",
+  "ok": true,
+  "finished_at": "2026-11-06T14:44:43+08:00"
+}

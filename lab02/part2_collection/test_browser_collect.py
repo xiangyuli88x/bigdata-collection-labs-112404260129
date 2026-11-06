@@ -18,11 +18,11 @@ class BrowserCollectorTests(unittest.TestCase):
             browser.wait_for_houses(VerificationDriver(), collector.BASE_URL, 1)
         self.assertEqual(result.exception.kind, "blocked_source")
 
-    def test_page_limit_cannot_exceed_eight(self):
+    def test_page_limit_cannot_exceed_safety_cap(self):
         import contextlib
         import io
         with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
-            browser.arguments(["--pages", "9"])
+            browser.arguments(["--pages", "1001"])
 
     def test_real_captured_records_roundtrip_without_changing_units(self):
         from bs4 import BeautifulSoup

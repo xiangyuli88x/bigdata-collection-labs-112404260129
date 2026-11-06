@@ -1,0 +1,164 @@
+{
+  "source": "browser_saved",
+  "provider": "Selenium已保存的真实网页，经末页规则修正后恢复导出",
+  "capture_method": "browser_dom_serialization",
+  "captured_at": "2026-10-27T22:14:51+08:00",
+  "recovered_at": "2026-10-27T22:51:35+08:00",
+  "recovered_from": "/home/pwuser/workspace/L02_reliable_collection/evidence/browser_runs/20261027_221451_3bcff2e2",
+  "pages": [
+    {
+      "url": "https://www.bspider.top/anjuke/",
+      "requested_url": "http://www.bspider.top/anjuke/",
+      "file": "page_001.html",
+      "sha256": "48522848a3dde1a6d0c2fa0ee082f7d61f878dd0096b71a453f67c3ed31ff165",
+      "captured_at": "2026-10-27T22:14:57+08:00",
+      "property_count": 60,
+      "html_chars": 253702,
+      "next": {
+        "href": "?page=2",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=2",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=2",
+      "requested_url": "https://www.bspider.top/anjuke/?page=2",
+      "file": "page_002.html",
+      "sha256": "a17e4796e936b02a0a3faee9c9c1bcf59f95614da2e0ed6f9a43dbd3fa2c2ee9",
+      "captured_at": "2026-10-27T22:15:01+08:00",
+      "property_count": 60,
+      "html_chars": 257895,
+      "next": {
+        "href": "?page=3",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=3",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=3",
+      "requested_url": "https://www.bspider.top/anjuke/?page=3",
+      "file": "page_003.html",
+      "sha256": "cddd8251568161b571d70f8c405c17822720a6534f93a769dc1acf3129588340",
+      "captured_at": "2026-10-27T22:15:05+08:00",
+      "property_count": 60,
+      "html_chars": 259372,
+      "next": {
+        "href": "?page=4",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=4",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=4",
+      "requested_url": "https://www.bspider.top/anjuke/?page=4",
+      "file": "page_004.html",
+      "sha256": "8f9d2e9b5d30024c2e4279f3783f86a9538c6a85d6c271a18a78938ad07547fa",
+      "captured_at": "2026-10-27T22:15:08+08:00",
+      "property_count": 60,
+      "html_chars": 259534,
+      "next": {
+        "href": "?page=5",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=5",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=5",
+      "requested_url": "https://www.bspider.top/anjuke/?page=5",
+      "file": "page_005.html",
+      "sha256": "57f8ec2caf573d7d5bd4f9824f9dffeea881cbcf6bc297b1a61b1c6c7570f0bc",
+      "captured_at": "2026-10-27T22:15:11+08:00",
+      "property_count": 60,
+      "html_chars": 259860,
+      "next": {
+        "href": "?page=6",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=6",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=6",
+      "requested_url": "https://www.bspider.top/anjuke/?page=6",
+      "file": "page_006.html",
+      "sha256": "f6ebf5713fe291da8ed8bbd7fabc2de834b425a610cdadc7936fe4a768b5b661",
+      "captured_at": "2026-10-27T22:15:13+08:00",
+      "property_count": 60,
+      "html_chars": 261997,
+      "next": {
+        "href": "?page=7",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=7",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=7",
+      "requested_url": "https://www.bspider.top/anjuke/?page=7",
+      "file": "page_007.html",
+      "sha256": "6de7ae4e595ace5d6ab9193faed6b0993a5a93ff8e66390996601bef194815fd",
+      "captured_at": "2026-10-27T22:15:16+08:00",
+      "property_count": 60,
+      "html_chars": 261023,
+      "next": {
+        "href": "?page=8",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=8",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=8",
+      "requested_url": "https://www.bspider.top/anjuke/?page=8",
+      "file": "page_008.html",
+      "sha256": "4d3c627311c7ddfdd378b6dd6ae08748bb486e867850e8d9e396c385a62a9abe",
+      "captured_at": "2026-10-27T22:15:19+08:00",
+      "property_count": 60,
+      "html_chars": 261622,
+      "next": {
+        "href": "?page=9",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=9",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=9",
+      "requested_url": "https://www.bspider.top/anjuke/?page=9",
+      "file": "page_009.html",
+      "sha256": "899bbb3b8a3446d6b2a1122644002ce3b5ae30a82e4997f0ea5961e6ae9c68d6",
+      "captured_at": "2026-10-27T22:15:21+08:00",
+      "property_count": 60,
+      "html_chars": 261661,
+      "next": {
+        "href": "?page=10",
+        "disabled": false,
+        "urljoin_result": "https://www.bspider.top/anjuke/?page=10",
+        "disabled_evidence": null
+      }
+    },
+    {
+      "url": "https://www.bspider.top/anjuke/?page=10",
+      "requested_url": "https://www.bspider.top/anjuke/?page=10",
+      "file": "page_010.html",
+      "sha256": "7ebe2106544b8e618eb5be62b9c6592ea21e4dacb3975b792a72b0c87d128468",
+      "captured_at": "2026-10-27T22:15:53+08:00",
+      "property_count": 60,
+      "html_chars": 259734,
+      "next": {
+        "href": "#",
+        "disabled": true,
+        "urljoin_result": null,
+        "disabled_evidence": "教学站next无next-active且href=#；上一页与数字分页核对通过"
+      }
+    }
+  ],
+  "complete": true,
+  "scope_complete": true,
+  "collection_scope": null,
+  "stop_reason": "第10页next无next-active且href=#；上一页及数字分页核对通过"
+}

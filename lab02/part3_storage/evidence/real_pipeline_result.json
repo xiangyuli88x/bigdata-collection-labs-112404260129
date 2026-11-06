@@ -1,15 +1,15 @@
 {
   "stage": 3,
-  "run_id": "20261027_165930_11522",
-  "started_at": "2026-10-27T16:59:30+08:00",
-  "checked_at": "2026-10-27T16:59:37+08:00",
+  "run_id": "20261106_144457_4252",
+  "started_at": "2026-11-06T14:44:57+08:00",
+  "checked_at": "2026-11-06T14:45:02+08:00",
   "state": "ready",
   "import_process_started": true,
   "actual_import_completed": true,
   "actual_write_state": "recorded_by_this_process",
-  "before_count": 0,
-  "after_count": 437,
-  "inserted_count": 437,
+  "before_count": 498,
+  "after_count": 498,
+  "inserted_count": 0,
   "rerun_inserted_count": 0,
   "samples_match": true,
   "source_samples": [
@@ -51,32 +51,32 @@
     },
     {
       "sample": "last",
-      "page": 8,
-      "url": "https://www.bspider.top/anjuke/?page=8",
+      "page": 10,
+      "url": "https://www.bspider.top/anjuke/?page=10",
       "page_row": 60,
-      "csv_line": 438,
+      "csv_line": 499,
       "record": {
-        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
-        "house": "荣盛鹿山府",
-        "address": "渝北中央公园金州大道,近万康路",
-        "struct": "3室2厅2卫",
-        "area": "99㎡",
-        "floor": "中层(共6层)",
-        "maketime": "2020年建造",
-        "price": "15960元/㎡"
+        "title": "恒大照母山 精装3房 内圈位置 户型方正 拎包即住 诚意出售",
+        "house": "恒大照母山山水城",
+        "address": "渝北照母山恒康路9号",
+        "struct": "3室2厅1卫",
+        "area": "90.2㎡",
+        "floor": "低层(共32层)",
+        "maketime": "2015年建造",
+        "price": "15530元/㎡"
       },
       "html_csv_exact_match": true
     }
   ],
-  "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
+  "csv_sha256": "e98227526b23c9f3574dcf65a6f3170e15813041a114791cdc85a0e4030bbbe3",
   "returncode": 0,
-  "stdout_file": "logs/real_pipeline_20261027_165930_11522.stdout.txt",
-  "stderr_file": "logs/real_pipeline_20261027_165930_11522.stderr.txt",
+  "stdout_file": "logs/real_pipeline_20261106_144457_4252.stdout.txt",
+  "stderr_file": "logs/real_pipeline_20261106_144457_4252.stderr.txt",
   "reason": "真实网页来源、CSV与数据库8字段一致；少量/全量入库及新进程重跑新增0通过",
   "source_mode": "browser_snapshot",
   "cross_page_index": 60,
-  "csv_rows": 437,
-  "source_run_id": "20261027T165852_544444_ea7d55c2",
+  "csv_rows": 498,
+  "source_run_id": "20261106T144443_651162_d61abf3f",
   "storage_script_sha256": "a8635645df61d087018cfe03d1c0bf7118595965f247f67013c4b3ff6af371ef",
   "command": [
     "/usr/bin/python",
@@ -134,22 +134,22 @@
     {
       "phase": "run",
       "sample": "last",
-      "url": "https://www.bspider.top/anjuke/?page=8",
-      "page": 8,
+      "url": "https://www.bspider.top/anjuke/?page=10",
+      "page": 10,
       "page_row": 60,
-      "csv_line": 438,
+      "csv_line": 499,
       "database_ids": [
-        437
+        498
       ],
       "record": {
-        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
-        "house": "荣盛鹿山府",
-        "address": "渝北中央公园金州大道,近万康路",
-        "struct": "3室2厅2卫",
-        "area": "99㎡",
-        "floor": "中层(共6层)",
-        "maketime": "2020年建造",
-        "price": "15960元/㎡"
+        "title": "恒大照母山 精装3房 内圈位置 户型方正 拎包即住 诚意出售",
+        "house": "恒大照母山山水城",
+        "address": "渝北照母山恒康路9号",
+        "struct": "3室2厅1卫",
+        "area": "90.2㎡",
+        "floor": "低层(共32层)",
+        "maketime": "2015年建造",
+        "price": "15530元/㎡"
       },
       "all_eight_equal": true
     },
@@ -200,22 +200,22 @@
     {
       "phase": "rerun",
       "sample": "last",
-      "url": "https://www.bspider.top/anjuke/?page=8",
-      "page": 8,
+      "url": "https://www.bspider.top/anjuke/?page=10",
+      "page": 10,
       "page_row": 60,
-      "csv_line": 438,
+      "csv_line": 499,
       "database_ids": [
-        437
+        498
       ],
       "record": {
-        "title": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
-        "house": "荣盛鹿山府",
-        "address": "渝北中央公园金州大道,近万康路",
-        "struct": "3室2厅2卫",
-        "area": "99㎡",
-        "floor": "中层(共6层)",
-        "maketime": "2020年建造",
-        "price": "15960元/㎡"
+        "title": "恒大照母山 精装3房 内圈位置 户型方正 拎包即住 诚意出售",
+        "house": "恒大照母山山水城",
+        "address": "渝北照母山恒康路9号",
+        "struct": "3室2厅1卫",
+        "area": "90.2㎡",
+        "floor": "低层(共32层)",
+        "maketime": "2015年建造",
+        "price": "15530元/㎡"
       },
       "all_eight_equal": true
     }
@@ -223,13 +223,13 @@
   "files": [
     {
       "path": "data/houseinfo.csv",
-      "bytes": 83191,
-      "sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87"
+      "bytes": 94453,
+      "sha256": "e98227526b23c9f3574dcf65a6f3170e15813041a114791cdc85a0e4030bbbe3"
     },
     {
       "path": "part2_collection/csv_provenance.json",
       "bytes": 178,
-      "sha256": "48b0b0f355e27e87b5de53d89c8a5e15ad9c46558f22fdceec2b7d6384b0109c"
+      "sha256": "24856d94283abf7cda518d99cf1904264a96e5f567dccba328c8eb008a6322f8"
     },
     {
       "path": "part3_storage/storage.py",
@@ -243,36 +243,36 @@
     },
     {
       "path": "part3_storage/status.json",
-      "bytes": 869,
-      "sha256": "0d2317568d26b64f0411c6362c7fdb3bf0512ca0a576d410dc0a6c33c5fbae45"
+      "bytes": 866,
+      "sha256": "8efe564cfdcbfd2585b72da7704101e1ca8e88a41c29697e9cce55add0fd61cb"
     },
     {
       "path": "part3_storage/evidence/first_import_result.json",
-      "bytes": 743,
-      "sha256": "d46876d388e15cd96624c91a73f444f85875a1d2dcc2a62f47b743f45aebd0f3"
+      "bytes": 741,
+      "sha256": "ae1dd0fc980bdced7d970725a679c332d7cb4d3dea50329fc6c7b8236cb7bd74"
     },
     {
       "path": "part3_storage/evidence/rerun_result.json",
       "bytes": 733,
-      "sha256": "d0f3674479d97f18afc08eb3108c86aa33610bf5a9a8a30d467e1d89e966058d"
+      "sha256": "bb6af62aabb4c3a0ceb244fa8073390860d419c23a8be3184d42216bd35f22c4"
     },
     {
       "path": "part3_storage/evidence/samples_run.json",
-      "bytes": 4290,
-      "sha256": "436cb20d1a997f1a607561bb013ce1d33cd78995c257cae85a22d093ef52471e"
+      "bytes": 4280,
+      "sha256": "35adfbb453863937a242c61bb2a56f7b07f60d3895bab4cb06a76c55a3fbf7f7"
     },
     {
       "path": "part3_storage/evidence/samples_rerun.json",
-      "bytes": 4290,
-      "sha256": "436cb20d1a997f1a607561bb013ce1d33cd78995c257cae85a22d093ef52471e"
+      "bytes": 4280,
+      "sha256": "35adfbb453863937a242c61bb2a56f7b07f60d3895bab4cb06a76c55a3fbf7f7"
     },
     {
-      "path": "part3_storage/logs/real_pipeline_20261027_165930_11522.stdout.txt",
-      "bytes": 8316,
-      "sha256": "067ee9554dd3863b907aaeb3853f307866289fb129c8886ca9ef0d251d8a70b8"
+      "path": "part3_storage/logs/real_pipeline_20261106_144457_4252.stdout.txt",
+      "bytes": 9804,
+      "sha256": "2a9a0f660cd22dab6a7f7bc5844c410b7744aa431200771e05be8d4d377cc976"
     },
     {
-      "path": "part3_storage/logs/real_pipeline_20261027_165930_11522.stderr.txt",
+      "path": "part3_storage/logs/real_pipeline_20261106_144457_4252.stderr.txt",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }

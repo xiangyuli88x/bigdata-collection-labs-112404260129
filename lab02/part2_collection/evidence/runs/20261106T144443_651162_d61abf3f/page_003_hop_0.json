@@ -1,0 +1,21 @@
+{
+  "requested_url": "https://www.bspider.top/anjuke/?page=3",
+  "url": "https://www.bspider.top/anjuke/?page=3",
+  "source_mode": "browser_snapshot",
+  "source_file": "/home/pwuser/workspace/bigdata-collection-labs-112404260129/lab02/part2_collection/evidence/browser_full/page_003.html",
+  "encoding": "utf-8-sig",
+  "status_code": null,
+  "offline_replay": true,
+  "browser_sha256": "cddd8251568161b571d70f8c405c17822720a6534f93a769dc1acf3129588340",
+  "captured_at": "2026-10-27T22:15:05+08:00",
+  "browser_property_count": 60,
+  "capture_method": "browser_dom_serialization",
+  "content_representation": "browser_dom_utf8",
+  "checked_at": "2026-11-06T14:44:45+08:00",
+  "decoded_html_path": "evidence/runs/20261106T144443_651162_d61abf3f/page_003_hop_0.html",
+  "decoded_html_sha256": "cddd8251568161b571d70f8c405c17822720a6534f93a769dc1acf3129588340",
+  "title": "重庆二手房房产网，重庆二手房出售，重庆买房购房交易信息 - 58安居客",
+  "property_count": 60,
+  "snapshot_path": "evidence/runs/20261106T144443_651162_d61abf3f/page_003_hop_0_browser_dom.html",
+  "snapshot_sha256": "cddd8251568161b571d70f8c405c17822720a6534f93a769dc1acf3129588340"
+}

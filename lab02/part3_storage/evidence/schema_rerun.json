@@ -82,10 +82,10 @@
       ""
     ]
   ],
-  "create_sql": "CREATE TABLE `houseinfo` (\n  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增长主键',\n  `title` varchar(200) DEFAULT NULL COMMENT '标题',\n  `house` varchar(50) DEFAULT NULL COMMENT '楼盘',\n  `address` varchar(200) DEFAULT NULL COMMENT '地址',\n  `struct` varchar(50) DEFAULT NULL COMMENT '户型',\n  `area` varchar(20) DEFAULT NULL COMMENT '建筑面积',\n  `floor` varchar(20) DEFAULT NULL COMMENT '楼层',\n  `maketime` varchar(20) DEFAULT NULL COMMENT '建造年代',\n  `price` varchar(20) DEFAULT NULL COMMENT '每平方米单价',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=438 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+  "create_sql": "CREATE TABLE `houseinfo` (\n  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增长主键',\n  `title` varchar(200) DEFAULT NULL COMMENT '标题',\n  `house` varchar(50) DEFAULT NULL COMMENT '楼盘',\n  `address` varchar(200) DEFAULT NULL COMMENT '地址',\n  `struct` varchar(50) DEFAULT NULL COMMENT '户型',\n  `area` varchar(20) DEFAULT NULL COMMENT '建筑面积',\n  `floor` varchar(20) DEFAULT NULL COMMENT '楼层',\n  `maketime` varchar(20) DEFAULT NULL COMMENT '建造年代',\n  `price` varchar(20) DEFAULT NULL COMMENT '每平方米单价',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=499 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
   "engine": "InnoDB",
   "collation": "utf8mb4_0900_ai_ci",
-  "row_count": 437,
+  "row_count": 498,
   "first_five": [
     {
       "title": "万科物业自营 南坪六公里金域翰林 三号线精装正三房带家具电器",

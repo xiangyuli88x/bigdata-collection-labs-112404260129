@@ -1,26 +1,26 @@
 {
   "stage": 3,
   "state": "awaiting_csv",
-  "checked_at": "2026-10-27T16:59:34+08:00",
-  "csv_sha256": "e4d5bbecab33daaba1c81118123f23f77e73361a4696ef9862f9284d19a87d87",
-  "before_count": 0,
-  "after_count": 437,
-  "inserted_count": 437,
+  "checked_at": "2026-11-06T14:44:59+08:00",
+  "csv_sha256": "e98227526b23c9f3574dcf65a6f3170e15813041a114791cdc85a0e4030bbbe3",
+  "before_count": 498,
+  "after_count": 498,
+  "inserted_count": 0,
   "rerun_inserted_count": null,
   "samples_match": true,
   "actual_import_completed": true,
   "reason": "首次真实入库及逐字段核验完成，等待新进程独立重跑",
-  "csv_rows": 437,
+  "csv_rows": 498,
   "committed_batches": [
     {
       "phase": "small_real_sample",
-      "inserted_count": 3
+      "inserted_count": 0
     },
     {
       "phase": "all_csv",
-      "inserted_count": 434
+      "inserted_count": 0
     }
   ],
-  "final_db_fingerprint": "f0e7dc6aadd6a3e034b837a67904aec6cdddc99d30644c489967c909c6f5af9d",
+  "final_db_fingerprint": "7164ba5b32072aa0558991d9b0863ef5a5366f5ff0a87c408bfea88e48a4c4d3",
   "cross_page_sample_verified": true
 }

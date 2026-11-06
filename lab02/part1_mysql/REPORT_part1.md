@@ -138,7 +138,7 @@ SELECT COUNT(*) AS before_count FROM houseinfo;
 | 2026-10-27 15:30:46 +08:00 | 创建表成功，9 列结构符合手册，`before_count=0` | [首次建表 JSON](evidence/mysql_20261027_153046_419060.json) |
 | 2026-10-27 15:33:17 +08:00 | 已有表核验通过，未再次建表，条数仍为 0 | [独立重跑 JSON](evidence/mysql_20261027_153317_689001.json) |
 | 后补历史 MySQL 终端原图 | 切库、表结构和 `current_count=0` 均可见，原图未显示拍摄时间 | 图4；[原图来源与哈希](evidence/user_screenshots.json) |
-| 后续第三阶段，2026-10-27 16:59:35 +08:00 | 由 0 条导入至 437 条，独立重跑新增 0 条 | [第三阶段状态记录](../part3_storage/status.json) |
+| 后续第三阶段，2026-10-27 16:59:35 +08:00 | 由 0 条导入至 437 条，独立重跑新增 0 条 | [第三阶段历史状态](https://github.com/xiangyuli88x/bigdata-collection-labs-112404260129/blob/fdd7b4ac7d4dd1ebb449fbe04d88f1836000ac98/lab02/part3_storage/status.json) |
 | 报告整理时只读复核，2026-10-27 21:45:55 +08:00 | 当前 437 条，结构与第一阶段一致 | [本次只读复核记录](evidence/report_review_20261027_214555.json) |
 
 **第一阶段的入库前条数为 0；后续入库完成后的总条数为 437。** 两个数字对应不同阶段，不矛盾。本次整理报告只执行只读查询，未改变数据库记录，也未将第一阶段状态文件中的历史 `before_count=0` 和检查时间改成当前值。

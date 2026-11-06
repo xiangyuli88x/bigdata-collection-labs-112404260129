@@ -31,7 +31,7 @@ import time
 import uuid
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from urllib.parse import unquote, urljoin, urlsplit, urlunsplit
+from urllib.parse import parse_qs, unquote, urljoin, urlsplit, urlunsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -171,6 +171,28 @@ def parse_record(row):
     return (title, house, address, struct, area, floor, maketime, price)
 
 
+def inactive_teaching_next(pager, button, current_url):
+    """教学站末页的停用写法：next无next-active且href=#，并核对分页上下文。"""
+    classes = button.get("class", [])
+    if (button.name != "a" or "next" not in classes or "next-active" in classes
+            or button.get("href", "").strip() != "#"):
+        return False
+    previous = pager.select_one("a.pre.pre-active[href]")
+    numbers = [int(node.get_text(strip=True)) for node in pager.select("ul.page a[href]")
+               if node.get_text(strip=True).isdigit()]
+    if previous is None or not numbers:
+        return False
+    try:
+        current = int(parse_qs(urlsplit(checked_url(current_url)).query).get("page", ["1"])[0])
+        before_url = checked_url(previous["href"], current_url)
+        before = int(parse_qs(urlsplit(before_url).query).get("page", ["1"])[0])
+    except (ValueError, CollectionError):
+        return False
+    # 不能仅凭一个无效href断言末页；上一页应正确，数字分页不能指向后续页。
+    return (current > 1 and before == current - 1
+            and max(numbers) in (current - 1, current) and all(1 <= n <= current for n in numbers))
+
+
 def next_page(soup, current_url):
     pager = soup.select_one(".pagination, .multi-page, .pagination-wrap, .pagination-container, .pager")
     if pager is None:
@@ -181,10 +203,14 @@ def next_page(soup, current_url):
     if button is None:
         raise CollectionError("下一页按钮缺失，不能认定末页")
     classes = button.get("class", [])
+    inactive = inactive_teaching_next(pager, button, current_url)
     disabled = (button.has_attr("disabled") or str(button.get("aria-disabled", "")).lower() == "true"
-                or any(value in ("disabled", "disable", "next-disabled", "is-disabled") for value in classes))
+                or any(value in ("disabled", "disable", "next-disabled", "is-disabled") for value in classes)
+                or inactive)
     href = button.get("href", "")
     info = {"html": str(button), "href": href, "disabled": disabled}
+    if inactive:
+        info["disabled_evidence"] = "教学站next无next-active且href=#；上一页与数字分页核对通过"
     if disabled:
         return None, info
     if not href or href.strip() == "#" or href.lower().startswith("javascript:"):

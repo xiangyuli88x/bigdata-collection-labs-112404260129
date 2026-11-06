@@ -54,50 +54,50 @@
     },
     {
       "role": "last",
-      "csv_index_zero_based": 436,
-      "csv_line": 438,
+      "csv_index_zero_based": 497,
+      "csv_line": 499,
       "matched_ids": [
-        437
+        498
       ],
       "fields": {
         "title": {
-          "csv": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
-          "database": "中央公园高品质洋房 出门就是轻轨站  三轻轨线环绕 总高6楼",
+          "csv": "恒大照母山 精装3房 内圈位置 户型方正 拎包即住 诚意出售",
+          "database": "恒大照母山 精装3房 内圈位置 户型方正 拎包即住 诚意出售",
           "equal": true
         },
         "house": {
-          "csv": "荣盛鹿山府",
-          "database": "荣盛鹿山府",
+          "csv": "恒大照母山山水城",
+          "database": "恒大照母山山水城",
           "equal": true
         },
         "address": {
-          "csv": "渝北中央公园金州大道,近万康路",
-          "database": "渝北中央公园金州大道,近万康路",
+          "csv": "渝北照母山恒康路9号",
+          "database": "渝北照母山恒康路9号",
           "equal": true
         },
         "struct": {
-          "csv": "3室2厅2卫",
-          "database": "3室2厅2卫",
+          "csv": "3室2厅1卫",
+          "database": "3室2厅1卫",
           "equal": true
         },
         "area": {
-          "csv": "99㎡",
-          "database": "99㎡",
+          "csv": "90.2㎡",
+          "database": "90.2㎡",
           "equal": true
         },
         "floor": {
-          "csv": "中层(共6层)",
-          "database": "中层(共6层)",
+          "csv": "低层(共32层)",
+          "database": "低层(共32层)",
           "equal": true
         },
         "maketime": {
-          "csv": "2020年建造",
-          "database": "2020年建造",
+          "csv": "2015年建造",
+          "database": "2015年建造",
           "equal": true
         },
         "price": {
-          "csv": "15960元/㎡",
-          "database": "15960元/㎡",
+          "csv": "15530元/㎡",
+          "database": "15530元/㎡",
           "equal": true
         }
       },

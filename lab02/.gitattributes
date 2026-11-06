@@ -1,0 +1,10 @@
+data/houseinfo.csv -text
+part2_collection/evidence/** -text
+part2_collection/csv_provenance.json -text
+part2_collection/latest_trial.json -text
+part2_collection/status.json -text
+part3_storage/evidence/** -text
+part3_storage/logs/** -text
+part3_storage/status.json -text
+part3_storage/storage.py -text
+part3_storage/run_real_import.py -text
