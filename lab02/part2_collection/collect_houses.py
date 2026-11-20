@@ -628,6 +628,16 @@ def collect(run, source, command, max_pages=100, take_pages=None):
         visited.add(actual_url)
         soup = parse_page(html, actual_url)
         records = [parse_record(row) for row in soup.select("div.property")]
+          
+        # records = []
+        # for row in soup.select("div.property"):
+        #     record = parse_record(row)
+        #     records.append(record)
+        
+
+      
+
+      
         fingerprint = page_fingerprint(records)
         if fingerprint in fingerprints:
             raise CollectionError("不同URL返回相同房源页面，停止采集")
